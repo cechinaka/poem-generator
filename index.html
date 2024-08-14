@@ -12,12 +12,18 @@
   </header>
 
   <main>
-    <form>
-      <input type="text" placeholder="Enter topic of poem" autofocus required/>
-      <input type="submit" />
+    <form class="form" id="form">
+      <div class="input">
+        <input type="text" class="poemInput" id="poemInput" placeholder="Enter a poem topic" autofocus required autocomplete="off" />
+        <input type="submit" class="submitButton" id="submitButton" value="Generate Poem" /> <br />
+      </div>
+      <div class="examples">
+        ex. flowers, summer, blue, etc.
+      </div>
+      
     </form>
-
-    <div>
+  
+    <div class="poem" id="poem">
       The poem will go here.
       <br />
       More poem here.
